@@ -1,20 +1,91 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  letter-spacing: 1px;
+}
+
+$mustard: #e29b2f;
+$brown: #b27e22;
+$terra: #c66b38;
+$blue: #95a3a5;
+$green: #a2a588;
+$beige: #f3e4dd;
+$pard: #8a664c;
+
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: $terra;
+}
+
+.menu__item {
+  font-size: 20px;
+  border-radius: 35px;
+  padding: 1.5%;
+  margin: 5%;
+  color: $beige;
+  transition: all .5s ease 0s;
+  .menu__link {
+    text-decoration: none;
+    color: $beige;
+  }
+  &:hover {
+    background-color: transparentize($color: $mustard, $amount: .7 );
+  }
+}
+
+.footer-conatiner {
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: #dadada;
+  .footer__item {
+    display: none;
+  }
+  @media (min-width: 1200px){
+    .footer__mobil-version {
+      display: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: $blue;
+      &:hover {
+        color: $pard;
+      }
+    }
+
+    .footer__item {
+      display: inherit;
+      margin: 3%;
+      padding: 0% 3.5%;
+    }
+  }
+}
+
+.footer__mobil-version {
+  font-size: 20px;
+  padding: 3.5%;
+  border-radius: 30px;
+  background-color: $mustard;
+  a {
+    text-decoration: none;
+    color: $beige;
+  }
+  &:hover {
+    color: $blue;
+    opacity: .9;
+  }
 }

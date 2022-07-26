@@ -1,9 +1,8 @@
 import React from 'react'
-import Menu from '../components/Menu'
 
 const Home = () => {
   return (
-    <Menu />
+    <h1>Aquí va algo</h1>
   )
 }
 
