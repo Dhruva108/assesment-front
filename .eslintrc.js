@@ -26,6 +26,5 @@ module.exports = {
         namedComponents: 'arrow-function',
       },
     ],
-
   },
 };
