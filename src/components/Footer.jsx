@@ -15,14 +15,12 @@ const Footer = () => (
 
     <div className="footer__item">
       Para ver el código fuente de este mini-proyecto:
-      {' '}
-      <Link to="https://github.com/Dhruva108/assesment-front">GitHub</Link>
+      <Link to="https://github.com/Dhruva108/assesment-front"> GitHub</Link>
     </div>
 
     <div className="footer__item">
       Esto es un poco acerca de mi:
-      {' '}
-      <Link to="/About">Juan Diaz</Link>
+      <Link to="/About"> Juan Diaz</Link>
     </div>
 
   </footer>

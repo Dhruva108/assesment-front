@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import ProductCard from '../components/ProductCard';
+import Products from '../components/Products';
 import { getProducts } from '../services/products';
 
 const Home = () => {
@@ -15,7 +15,7 @@ const Home = () => {
   }, []);
 
   return (
-    <ProductCard list={product} />
+    <Products list={product} />
   );
 };
 

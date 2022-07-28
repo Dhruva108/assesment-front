@@ -9,7 +9,7 @@ export async function getProducts() {
   }
 }
 
-export async function getProduc(id) {
+export async function getProduct(id) {
   try {
     const response = await fetch(`${BASE_URL}products/${id}`);
     return response.json();

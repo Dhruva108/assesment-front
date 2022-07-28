@@ -22,39 +22,51 @@ $pard: #8a664c;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100px;
+  height: 60px;
   background-color: $terra;
+  @media (min-width: 1200px) {
+    justify-content:flex-end;
+  }
+}
+
+.menu__item-container {
+  display: flex;
 }
 
 .menu__item {
   font-size: 20px;
-  border-radius: 35px;
-  padding: 1.5%;
-  margin: 5%;
+  padding: 7px;
   color: $beige;
-  transition: all .5s ease 0s;
-  .menu__link {
-    text-decoration: none;
-    color: $beige;
+  margin: 0px 5px;
+  @media (min-width: 1200px) {
+    margin: 5px 15px;
   }
+}
+
+.menu__link {
+  transition: all .5s ease 0s;
+  text-decoration: none;
+  color: $beige;
+  border-radius: 35px;
+  margin: 0px 30px;
   &:hover {
     background-color: transparentize($color: $mustard, $amount: .7 );
   }
 }
 
 .footer-conatiner {
-  position: fixed;
+  position: relative  ;
   bottom: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 70px;
+  height: 50px;
   background-color: #dadada;
   .footer__item {
     display: none;
   }
-  @media (min-width: 1200px){
+  @media (min-width: 1200px) {
     .footer__mobil-version {
       display: none;
     }
@@ -77,8 +89,8 @@ $pard: #8a664c;
 
 .footer__mobil-version {
   font-size: 20px;
-  padding: 3.5%;
-  border-radius: 30px;
+  padding: 7px 10px;
+  border-radius: 25px;
   background-color: $mustard;
   a {
     text-decoration: none;
@@ -87,5 +99,76 @@ $pard: #8a664c;
   &:hover {
     color: $blue;
     opacity: .9;
+  }
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.card-container {
+  border: 0.5px solid $beige;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 80vw;
+  height: auto;
+  font-size: 10px;
+  padding: 7px 14px;
+  margin-top: 15px;
+  @media (min-width: 1200px) {
+    width: 20vw;
+    height: 60vh;
+    margin: 20px;
+  }
+}
+
+.card__image-container {
+  display: flex;
+  justify-content: center;
+  height: 350px;
+  width: fit-content;
+  height: fit-content;
+  padding: 5px;
+  margin-bottom: 10px;
+  @media (min-width: 1200px) {
+    height: 200PX;
+    width: 250px;
+    align-items: center;
+  }
+}
+
+.card__image__image {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+  @media (min-width: 1200px) {
+    width: 115%;
+    height: 115%;
+  }
+}
+
+.card__button-container{
+  justify-self: end;
+  .card__button {
+    width: 100px;
+    height: 30px;
+    background-color: $mustard;
+    border: 0.4px solid $blue;
+    border-radius: 25px;
+    margin: 15px 0px;
+    cursor: pointer;
+    &:hover {
+      opacity: .8;
+    }
   }
 }
