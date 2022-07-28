@@ -21,21 +21,34 @@ const Detail = () => {
       {
         detail
           ? (
-            <div>
-              <h2>{detail.title}</h2>
-              <p>Price: {detail.price}</p>
-              <h4>Description</h4>
-              <p>{detail.description}</p>
-              <h4>Category:</h4>
-              <p>{detail.category}</p>
-              <img src={detail.image} alt="element" />
-              <h4>Raiting</h4>
-              <ul>
-                <li>Rate: {detail.rating.rate}</li>
-                <li>Count: {detail.rating.count}</li>
-              </ul>
+            <div className="detail-container">
+              <section className="detail__section1">
+                <div className="deatil__image-conatiner">
+                  <img
+                    className="deatil__image"
+                    src={detail.image}
+                    alt="element"
+                  />
+                </div>
+                <h2 className="detail__title">{detail.title}</h2>
+                <p className="detail__price"><strong>Price: </strong>${detail.price} usd</p>
+                <p className="detail__description">{detail.description}</p>
+
+                <div className="detail__category-container">
+                  <h4 className="detail__category__title">Category:</h4>
+                  <p className="detail__category">{detail.category}</p>
+                </div>
+              </section>
+
+              <section className="detail__section2">
+                <h4 className="detail__rating__title">Raiting</h4>
+                <ul className="detail__rating__list">
+                  <li>Rate: {detail.rating.rate}</li>
+                  <li>Count: {detail.rating.count}</li>
+                </ul>
+              </section>
             </div>
-          ) : null
+          ) : <h1>Loading ...</h1>
       }
     </div>
   );
