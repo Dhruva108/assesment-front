@@ -188,7 +188,7 @@ body {
     background-color: $light-gray;
     border: 0.4px solid $beige;
     border-radius: 25px;
-    margin: 15px 0px;
+    margin: 7px 0px;
     font-family: 'text';
     color: $pard;
     cursor: pointer;
@@ -289,4 +289,12 @@ body {
     color: $brown;
     font-weight: bolder;
   }
+}
+
+.card__time {
+  font-size: 17px;
+}
+
+.disabled {
+  display: none;
 }
