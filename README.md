@@ -1,31 +1,71 @@
-# Assesment Front-end
+[Repo Assesment Front-end](https://github.com/Dhruva108/assesment-front)
 
-El objetivo de esta misión es poner en práctica lo que has aprendido en el programa. Los temas que se cubrirán son: Scrum, Git, HTML y CSS, JavaScript y React.
+1.
+- *Sprint Planning:* Es donde se planea qué se va a llevar a cabo durante el sprint que comienza y se decide la duración
+- *Daily meeting:* También conocida como "Reunión de pie"; es una reunión corta donde cada integrante del scrum team cuenta qué hizo, que hará y que difiultades ha tenido.
+- *Sprint review:* Es donde se hace estrega de lo hecho en el sprint
+- *Spront retro:* Es donde se chequea las "métricas" del sprint en cuanto a calidad de lo entregado, si se cumplieron o no las metas del backlog, etc.
 
-La misión consta de dos partes: primero deberás construir un proyecto en React y después deberás responder una serie de preguntas. En el reporte de la misión deberás agregar el link al repositorio del proyecto y las respuestas a las preguntas.
+2. Son las herramientas que se usan para maquetar o diseñar la forma en que se va a ver y la forma en que va a fluir un proyecto.
+Un ejemplo sería Figma.
 
-La fecha limite para la entrega será el domingo 31 de Julio.
+3. Las tres sirven para declarar variable:
+- *var:* Tiene un scope muy amplio, permite declarar varias variables con el mismo nombre y por lo tanto pueden trater problemas, por lo tanto *nunca* se usa.
+- *let:* tiene un scope mucho más reducido, solo funciona dentro del scope en bloque, sirve para declara variable en las cuales puede cambiar su valor. Recibe todo tipo de dato.
+Se usa cuando se sabe que el valor de esa variable va a ser variable.
+- *const:* Se una varibale que es constante, lo que quiere decir que su valor no va a poder ser cambiado en ningún caso. Su scope es de bloque y es el tipo de variable que se define por defecto, excepto que se sepa que su valor va a cambiar, para lo cual se una *let*
 
-## 1. Proyecto
-Construir una aplicación web la cual consta de tres páginas:
+4.
+- git switch -c rama1
+- git checkout -b rama1
+- git branch rama1
 
-- Home
-- Product Detail
-- About
-La aplicación debe tener un menú que le permita al usuario navegar entre estas páginas.
+5. *git merge:* permite crear un solo commit nacido de la unión (fusión) de una rama de desarrollo con la rama principal.
+*git rebase:* permite rebasar los commits de una rama sobre otra ubicándolos por delante de los comits de la rama rebasada
 
-#### Requerimientos
-Usar Flexbox CSS.
-El proyecto debe tener configurado ESLint y el Prettier y que tus archivos no tengan problemas con estos.
-El código del proyecto debe estar en un repositorio público de tu autoría.
-Bonus: Implementar tu CSS con BEM o módulos de CSS.
+6.
+- *PR* Es el pedido que se hace en GitHub una vez un desarrollador ha terminado una funcionalidad; por lo general se usa para que otros desarrolladores chequeen el código escrito y no vaya a existir ningún error al momento de unirlo a la rama principal de desarrollo.
+- *pull* Es el comando en git que permite actualizar un repo loca con lo que haya en el repo remoto. Es importante anotar que solo ectualiza de a una rama, así que para actualizar varias ramas, habría que hacerlo en cada una de las ramas locales.
 
-## 2. Preguntas
-- ¿Cuáles son las ceremonias más importantes de un Sprint y cuál es la idea de cada una?
-- ¿Qué son los Wireframes? Nombra al menos una herramienta que podamos utilizar.
-- Explicar la diferencia entre var, let y const. Y dar un ejemplo en qué caso se utilizará.
-- ¿Cuáles son los tres comandos que se pueden utilizar para crear una nueva rama llamada rama-1?
-- Explicar la diferencia entre git merge y git rebase.
-- ¿Cuál es la diferencia entre Pull Request (PR) y el comando git pull?
-- ¿Qué es el Virtual DOM?
-- Dado el siguiente codePen, el cual solo tiene un HTML, por medio de css llegar a esta respuesta. Imagen. (Para mostrar los servicios debes usar CSS Flexbox o CSS Grid).
+7. Es la representación del DOM de React en donde suceden los estados usados en el código.
+
+8.
+```.c-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.c-section__title {
+  border-top: 10px solid rgb(135, 134, 134);
+  background-color: rgb(33, 31, 31);
+  color: beige;
+  width: 60vw;
+  text-align: center;
+  padding: 20px 0px 5px;
+  margin: 0px;
+}
+
+.c-services {
+  display: flex;
+  justify-content: center;
+  width: 65vw;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
+}
+
+.c-services__item {
+  list-style-type: none;
+  width: 27vw;
+  background-color: rgb(213, 215, 215);
+  padding: 17px;
+  margin: 10px;
+}
+
+.c-services__item:hover {
+  box-shadow: 0px 3px 7px -2px lightslategray;
+  cursor: pointer;
+}
