@@ -29,7 +29,7 @@ Se usa cuando se sabe que el valor de esa variable va a ser variable.
 
 7. Es la representación del DOM de React en donde suceden los estados usados en el código.
 
-8.
+8. Por favor hacerle copy/paste al código para ver la solución [aqui <---](https://codepen.io/cristian-makeitreal/pen/NWadqqa?editors=1100)
 ```.c-section {
   display: flex;
   justify-content: center;
