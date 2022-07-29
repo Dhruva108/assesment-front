@@ -22,14 +22,14 @@ const Detail = () => {
         detail
           ? (
             <div className="detail-container">
-              <section className="detail__section1">
-                <div className="deatil__image-conatiner">
-                  <img
-                    className="deatil__image"
-                    src={detail.image}
-                    alt="element"
-                  />
-                </div>
+              <div className="deatil__image-conatiner">
+                <img
+                  className="deatil__image"
+                  src={detail.image}
+                  alt="element"
+                />
+              </div>
+              <section className="detail__section">
                 <h2 className="detail__title">{detail.title}</h2>
                 <p className="detail__price"><strong>Price: </strong>${detail.price} usd</p>
                 <p className="detail__description">{detail.description}</p>
@@ -38,9 +38,7 @@ const Detail = () => {
                   <h4 className="detail__category__title">Category:</h4>
                   <p className="detail__category">{detail.category}</p>
                 </div>
-              </section>
 
-              <section className="detail__section2">
                 <h4 className="detail__rating__title">Raiting</h4>
                 <ul className="detail__rating__list">
                   <li>Rate: {detail.rating.rate}</li>
